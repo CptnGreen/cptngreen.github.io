@@ -1,0 +1,674 @@
+<tw-storydata name="11" startnode="1" creator="Twine" creator-version="2.2.1" ifid="8C2DB69F-8946-4354-AF60-9DAC89FB5781" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+</script><tw-passagedata pid="1" name="Безымянный параграф" tags="" position="340,41" size="100,100">Привет, давай откроем дверь
+[[Открыть дверь]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Открыть дверь" tags="" position="355,184" size="100,100">Какую выберешь следующей?
+[[Красную]]
+[[Синюю]]
+[[Зеленую]]</tw-passagedata><tw-passagedata pid="3" name="Красную" tags="" position="205,334" size="100,100">&lt;&lt;set $haveKey to true&gt;&gt;
+&lt;&lt;if $haveKey is true&gt;&gt;
+[[Войти]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Синюю" tags="" position="356,335" size="100,100">&lt;&lt;set $haveKey to false&gt;&gt;
+&lt;&lt;if $haveKey is true&gt;&gt;
+[[Открыть эту дверь]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Зеленую" tags="" position="506,334" size="100,100">&lt;&lt;set $haveKey to false&gt;&gt;
+&lt;&lt;if $haveKey is true&gt;&gt;
+[[Войти]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Дверь заперта" tags="" position="205,484" size="100,100">Сделайте двойной щелчок мышью на этом параграфе, чтобы отредактировать его.</tw-passagedata><tw-passagedata pid="7" name="Войти" tags="" position="377,511" size="100,100">Смотри, тут котенок!</tw-passagedata><tw-passagedata pid="8" name="Открыть эту дверь" tags="" position="531,473" size="100,100">Смотри, щенок!</tw-passagedata></tw-storydata>
+
+<tw-storydata name="6 занятие" startnode="1" creator="Twine" creator-version="2.2.1" ifid="0DDD742B-5677-46F7-802D-663FCE2D0D7E" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{ 
+/* 
+background: url("media/design-tools.jpg"); 
+background: url("media/chalkboard.jpg"); 
+background: url("media/bunting-flag.png"); 
+*/ 
+background-image: linear-gradient(bottom, blue, white); 
+background: url("media/science.png"); 
+background: url("media/shattered-island.gif"); 
+} 
+
+.passage{ 
+display: flex; 
+background: white; 
+font-size: 125%; 
+font-family: Helvetica, sans-serif; 
+color: white; 
+padding: 1%; 
+min-height: 400px; 
+
+border: solid #000 0.05em; 
+border-radius: 0.2em; 
+text-align:left; 
+background-color:#fff; 
+box-shadow: #000 0.5em 0.5em 0; 
+} 
+
+.passage div{ 
+padding: 5%; 
+background: rgba(0,0,0,0.7); 
+min-width: 200px; 
+} 
+
+.passage img{ 
+height: auto; 
+width: 40%; 
+align-self: flex-start; 
+} 
+
+.passage.begin{ 
+background: url("images/forest.jpg") 0 0 no-repeat; 
+} 
+
+span .red{ 
+color: red; 
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();
+
+
+
+
+</script><tw-tag name="robot" color="gray"></tw-tag><tw-passagedata pid="1" name="Безымянный параграф" tags="" position="212,0" size="100,100">[img[media/robot-1.jpg]]&lt;div&gt;Привет, на каждом занятии ты работал с зубчатыми колесами, слышал про повышающую и понижающую передачи, давай наконец-то разберемся, что это такое!
+
+[[Поехали!]]
+&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="2" name="Поехали!" tags="" position="381,11" size="100,100">[img[media/E-1.bmp]]&lt;div&gt;&lt;h2&gt;ЗУБЧАТАЯ ПЕРЕДАЧА&lt;/h2&gt;Самые простые зубчатые колеса также называются шестеренками. Если для построения механической передачи будем использовать только шестеренки, то такую передачу мы будем просто называть «зубчатой передачей». Их соединяют разными способами, чтобы передавать движение и силу в механизмах. На картинке ты видишь много способов соединения с шестернями, два из них мы уже испробовали в конструкциях.
+
+[[Понятно, идем дальше]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Понятно, идем дальше" tags="" position="508,24" size="100,100">[img[media/1.jpg]]&lt;div&gt;&lt;h2&gt;МЕХАНИЧЕСКАЯ ПЕРЕДАЧА&lt;/h2&gt;
+Соединение из нескольких зубчатых колес нужно для того, чтобы передавать движение на расстоянии. Как правило, движение передается от мотора к отдельным элементам конструкции, например, к колесам в автомобиле. Устройство, которое используется для передачи такого движения от мотора к другим элементам конструкции называется «механической передачей». 
+
+Помнишь, как собирал гоночную машину? Там было несколько соединений шестернями и две повышающих передачи. Что же это значит?
+
+[[Все понятно]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Все понятно" tags="" position="537,144" size="100,100">[img[media/E-2.bmp]]&lt;div&gt;&lt;h2&gt;ПЕРЕДАТОЧНОЕ ОТНОШЕНИЕ&lt;/h2&gt;
+Чтобы измерить во сколько раз быстрее или медленнее будет крутиться шестеренка, нужно рассчитать передаточное отношение. Оно рассчитывается как отношение количества зубчиков ведомого колеса к ведущему. Ведущее колесо - то, которое присоединено к мотору. 
+	
+Если к мотору присоединена малая 8-зубчатая шестеренка, а  ведомым
+колесом является 24-зубчатая, то передаточное отношение будет 24:8 или 3:1. Тогда скорость вращения снизится в 3 раза. Передача, в которой снижается скорость, называют «понижающей» или редуктором.
+	
+И наоборот, если к мотору сначала присоединить большую шестеренку, а потом маленькую, то образуется «повышающая» передача или мультипликатор, с передаточным отношением 1:3.
+
+[[Идем дальше]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Идем дальше" tags="" position="411,151" size="100,100">[img[media/E-3.bmp]]&lt;div&gt;&lt;h2&gt;ВЕТРОГЕНЕРАТОР&lt;/h2&gt;
+Итак, в гоночном автомобиле нам это пригодилось. Но где же еще может пригодиться? А вот например в ветрогенераторе! 
+
+Ветрогенератор - это устройство, которое преобразовывает поток воздуха посредством вращения лопастей и ротора внутри в электрическую энергию.
+
+[[Далее]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Далее" tags="" position="283,137" size="100,100">[img[media/E-4.bmp]]&lt;div&gt;&lt;h2&gt;ВЕТРОГЕНЕРАТОР&lt;/h2&gt;
+Через редуктор передается вращение от лопастей к генератору, который и вырабатывает электричество. 
+
+[[Что такое редуктор?]]
+[[Я знаю, что такое редуктор]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Что такое редуктор?" tags="" position="83,27" size="100,100">&lt;div&gt;&lt;h2&gt;РЕДУКТОР&lt;/h2&gt;
+Редуктором называют устройство, преобразующее высокую угловую скорость вращения входного вала в более низкую на выходном валу, повышая при этом вращающий момент, такой редуктор обычно называют демультипликатором, а редуктор, который преобразует низкую угловую скорость в более высокую обычно называют мультипликатором.
+
+[[Я знаю, что такое редуктор]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Я знаю, что такое редуктор" tags="" position="146,165" size="100,100">[img[media/E-5.bmp]]&lt;div&gt;&lt;h2&gt;ВЕТРОГЕНЕРАТОР&lt;/h2&gt;
+Огромные ветрогенераторы строят на открытой местности, чтобы улавливать большое количество ветра и поток ветра был постоянным. 
+
+Самый большой ветрогенератор в мире построили в 2007 году. Общая высота конструкции достигает 198 метров, а вес 6000 тонн.
+
+[[Дальше]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Дальше" tags="" position="16,171" size="100,100">[img[media/E-6.bmp]]&lt;div&gt;Лопасти могут быть самые разные, их форма и длина зависят от силы ветра в том месте, где стоит ветряк. Чем слабее ветер,тем крупнее должны быть лопасти, чтобы улавливать бОльшее его количество.
+
+Давай перейдем уже к конструкции. 
+
+[[Какая же конструкция?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Какая же конструкция?" tags="" position="14,302" size="100,100">[img[media/2.jpg]]&lt;div&gt;&lt;h2&gt;СБОРКА&lt;/h2&gt;
+Мотор вращает большую шестеренку. Большая шестеренка вращает коронарную шестеренку. Вторая коронарная шестеренка находится на той же оси, что и первая. Вторая коронарная шестеренка вращает малую шестеренка. Малая шестеренка вращает лопасти ветрогенератора.
+
+Как видно, данная конструкция лишь модель ветрогенератора, не лопасти вращают от ветра мотор, а мотор заставляет лопасти вращаться. 
+А теперь приступим к самой интересной части, к оживлению конструкции! Для начала познакомимся с новыми  блоками.
+
+[[Приступим!]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Приступим!" tags="" position="141,295" size="100,100">[img[media/E-7.bmp]]&lt;div&gt;&lt;h2&gt;БЛОК &quot;ЭКРАН&quot;&lt;h2&gt;
+При помощи этого блока компьютер может запоминать какое-то число и использовать его позднее в программе. С помощью входных блоков задается конкретное число, слово и показания датчиков. 
+
+[[Какой еще новый блок?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Какой еще новый блок?" tags="" position="262,261" size="100,100">[img[media/E-8.bmp]]&lt;div&gt;&lt;h2&gt;ВХОД &quot;ЭКРАН&quot;&lt;/h2&gt;
+
+Входной блок “Экран” использует записанное ранее число. Какое число показывает экран, такое использует программа. 
+При помощи блока “экран” задаем число, при помощи входного блока - используем.
+
+И еще БЛОК &quot;МАТЕМАТИКА&quot;
+
+И еще один  блок, блок “Математика”. Он используется для математических операций с цифрами. 
+
+[[Давай уже используем!]]&lt;/div&gt;[img[media/E-9.bmp]]</tw-passagedata><tw-passagedata pid="13" name="Давай уже используем!" tags="" position="390,260" size="100,100">[img[media/S-2.bmp]]&lt;div&gt;&lt;h2&gt;Давай испробуем новые блоки!&lt;/h2&gt;
+
+Вспомним запуск программы по кнопке. Зададим для первой программы “стрелку вверх”, блок математики, мощность мотора, “вход экран”. Составим вторую программу аналогичную первой, но поменяем знак у блока математики. Для этого просто нажмем на блок. 
+
+[[Смотрим видео!]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="14" name="Смотрим видео!" tags="Video-screen" position="517,259" size="100,100">&lt;div&gt;&lt;h2&gt;ДЕМОНТРАЦИЯ РАБОТЫ СБОРКИ&lt;/h2&gt;
+
+*здесь видео*
+
+По нажатию кнопки «стрелка вверх», скорость вращения мотора увеличивается. По нажатию кнопки «стрелка вниз», скорость вращения мотора уменьшается
+
+[[Круто!]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="15" name="Круто!" tags="" position="514,385" size="100,100">[img[media/E-9.bmp]]&lt;div&gt;&lt;h2&gt;ПРОГРАММИРОВАНИЕ&lt;/h2&gt;
+Давай раскрутим ветряк при помощи датчика расстояния!
+
+Посмотри внимательно программу и приступай к просмотру видео.
+
+[[Я понял, как работает]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Я понял, как работает" tags="" position="389,382" size="100,100">&lt;div&gt;&lt;h2&gt;ДЕМОНСТРАЦИЯ РАБОТЫ СБОРКИ&lt;/h2&gt;
+
+*здесь видео работы сборки*
+
+Мотор крутится сначала медленно, со скоростью 1. Каждый раз, когда срабатывает датчик расстояния, звучит случайный сигнал и мотор увеличивает скорость вращения на 1. Когда достигнет скорости 10 мотор останавливается.
+
+[[Здорово!]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Здорово!" tags="" position="276,400" size="100,100">[img[media/robot-3.jpg]]&lt;div&gt;Ну вот и все на сегодня! Спасибо тебе за занятие. Просмотри перед занятием теорию в своей методичке и, если останутся вопросы, не стесняйся подойти к преподавателю и задать вопросы. До встречи!&lt;/div&gt;</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Doors" startnode="1" creator="Twine" creator-version="2.2.1" ifid="E08CC7C7-9894-490F-BB5C-D622DB1A7650" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="У жёлтой двери" tags="yellow_door" position="667,292" size="100,100">&lt;div&gt;Человек в бежевом пальто и шляпе неподвижно стоял у распахнутой жёлтой двери, вглядываясь в глубину коридора за ней
+
+[[Войти в жёлтую дверь-&gt;В коридоре]]&lt;/div&gt;&lt;&lt;set $haveGreenKey to false&gt;&gt;&lt;&lt;set $haveRedKey to false&gt;&gt;&lt;&lt;set $haveBlueKey to false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="В коридоре" tags="door_choice" position="667,444" size="100,100">&lt;div&gt;Перед загадочным незнакомцем три двери: красная, зелёная и синяя. 
+К какой из них он подойдёт?
+
+[[Подойти к красной-&gt;У красной двери]]
+[[Подойти к зелёной-&gt;У зелёной двери]]
+[[Подойти к синей-&gt;У синей двери]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="У красной двери" tags="red_door" position="504,588" size="100,100">&lt;div&gt;Человек в пальто подошёл к красной двери и пристально смотрит на неё.
+&lt;&lt;if $haveRedKey is true&gt;&gt;
+[[Открыть дверь ключём и войти-&gt;Котик]]
+[[Вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта, вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="У зелёной двери" tags="green_door" position="666,594" size="100,100">&lt;div&gt;Загадочный человек в шляпе подошёл к зелёной двери и сложил руки на груди
+&lt;&lt;if $haveGreenKey is true&gt;&gt;
+[[Открыть дверь ключём и войти-&gt;Котик]]
+[[Вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта, вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="У синей двери" tags="blue_door" position="818,594" size="100,100">&lt;div&gt;Человек в шляпе взялся за ручку синей двери
+&lt;&lt;if $haveBlueKey is true&gt;&gt;
+[[Открыть дверь ключём и войти-&gt;Cобака]]
+[[Вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта, вернуться в коридор-&gt;В коридоре]]
+&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Котик" tags="cat" position="590,757" size="100,100">&lt;div&gt;За дверью оказался красивый, но очень злой котик:
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IrVT5EimEeY?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Cобака" tags="dog" position="782,758" size="100,100">&lt;div&gt;За дверью сидела сердитая собака&lt;/div&gt;</tw-passagedata></tw-storydata>
+
+<tw-storydata name="LR_6-06" startnode="1" creator="Twine" creator-version="2.2.1" ifid="316F7DD1-84B4-49D1-853B-8B0AD72FFB7E" zoom="0.6" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+  	/*
+  	background: url("media/design-tools.jpg");
+  	background: url("media/chalkboard.jpg");
+  	background: url("media/bunting-flag.png");
+  	*/
+  	background-image: linear-gradient(bottom, blue, white);
+   	background: url("media/science.png");
+  	background: url("media/shattered-island.gif");
+}
+
+.passage{
+  	display: flex;
+  	background: white;
+  	font-size: 125%;
+  	font-family: Helvetica, sans-serif;
+  	color: white;
+  	padding: 1%;
+ 	min-height: 400px;
+  
+  	border: solid #000 0.05em; 
+  	border-radius: 0.2em; 
+  	text-align:left; 
+  	background-color:#fff; 
+  	box-shadow: #000 0.5em 0.5em 0;
+}
+
+.passage div{
+  	padding: 5%;
+  	background: rgba(0,0,0,0.7);
+  	min-width: 200px;
+}
+
+.passage img{
+  	height: auto;
+  	width: 40%;
+  	align-self: flex-start;
+}
+
+.passage.begin{
+  	background: url("images/forest.jpg") 0 0 no-repeat;
+}
+
+span .red{
+	color: red;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();
+
+</script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="888,184" size="100,100">&lt;div&gt;Привет. Рад тебя видеть! Ну то есть конечно плохо, что ты пропустил занятие, но ничего страшного. Надеюсь, у тебя была уважительная причина? :-)
+
+[[Ага, я что-то заболел(а)...]]
+[[Да погода плохая была]]
+[[Просто так обстоятельства сложились]]
+[[Что-то не хотелось идти :-(]]
+[[У меня был День Рожденья!]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Ага, я что-то заболел(а)..." tags="" position="648,465" size="100,100">&lt;div&gt;Очень жаль! Скорее поправляйся и возвращайся на занятия, мы по тебе уже соскучились
+
+[[Спасибо, постараюсь-&gt;Продолжение]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Да погода плохая была" tags="" position="826,333" size="100,100">&lt;div&gt;Хах, ну знаешь! Я бы не назвал это уважительной причиной. Разве только с неба падали метеориты, а над землёй носились смерчи...
+
+[[Да-да, так всё и было!!-&gt;Продолжение]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Просто так обстоятельства сложились" tags="" position="969,380" size="100,100">&lt;div&gt;Понимаю, всякое бывает. Надеюсь, обстоятельства были скорее хорошие, чем плохие.
+
+[[Да, я отлично провел(а) время!-&gt;Продолжение]]
+[[Средне..-&gt;Продолжение]]
+[[Эх, к сожалению нет-&gt;Продолжение]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Что-то не хотелось идти :-(" tags="" position="1126,415" size="100,100">&lt;div&gt;Могу тебя понять, но в такие моменты как раз особенно важно всё-таки перебороть себя - это закалит твою силу воли. Прямо как в спорте - мыщцы качаются когда делаешь уже &quot;через не могу&quot;. 
+
+[[Возьму на заметку-&gt;Продолжение]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="У меня был День Рожденья!" tags="" position="1292,462" size="100,100">&lt;div&gt;Тогда я тебя поздравляю! Желаю тебе успехов в учебе, и чтобы твои родные никогда не болели. Это самое главное!
+
+[[Спасибо!-&gt;Продолжение]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Продолжение" tags="" position="923,547" size="100,100">&lt;&lt;set $counter = 1&gt;&gt;&lt;div&gt;Как бы то ни было, нам нужно навёрстывать упущенное. Но для начала я хотел бы убедиться, что в твоей голове задержалось хоть немного информации с прошлых занятий ;-)
+
+[[Всегда готов(а)]]
+[[Пора прятаться...]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Всегда готов(а)" tags="" position="1017,698" size="100,100">[img[media/E1.png]]&lt;div&gt;Я вижу настрой у тебя боевой! Тогда сразу держи вопрос на засыпку. Какое передаточное отношение в этой передаче? Считаем, что вращение передаётся от червяка.
+
+[[1:3-&gt;Продолжение2]]
+[[5:1-&gt;Продолжение2]]
+[[1:24]]
+[[100:1-&gt;Продолжение2]]
+[[Что-то я ничего не понял(а)...-&gt;Пора прятаться...]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="9" name="Пора прятаться..." tags="" position="542,724" size="100,100">&lt;div&gt;Раз ты пока не очень в себе уверен(а), давай начнём с вопроса попроще.
+
+[[Ага]]&lt;/div&gt; 
+
+</tw-passagedata><tw-passagedata pid="10" name="Продолжение2" tags="" position="715,764" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name="1:24" tags="" position="1058,846" size="100,100">[img[media/E1.png]]&lt;div&gt;Абсолютно верно! У червяка, как ты знаешь, один зуб, а на шестерёнке их 24, вот и получается 1 к 24. 
+
+А теперь скажи, какое передаточное число будет, если наоборот начать вращать зубчатое колесо, чтобы червяк приводился от него??
+
+[[1:48]]
+[[24:1]]
+[[Червяк не будет крутиться]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="12" name="1:48" tags="" position="691,917" size="100,100">&lt;div&gt;Ууу... нет, это даже не близко. Правильный ответ такой - конструкция вообще не будет работать, потому что &lt;span class=&quot;red&quot;&gt;вращение с шестерёнки на червяк не передаётся&lt;/span&gt;, это одно из основных свойств червяка. Что ж, придётся вернуться к более простым вопросам.&lt;/div&gt;
+
+[[Эх... ну что поделать-&gt;Пора прятаться...]]</tw-passagedata><tw-passagedata pid="13" name="24:1" tags="" position="840,999" size="100,100">&lt;div&gt;В принципе это был бы правильный ответ... если бы не одно большое НО: червяк не будет круиться от шестерни, это одно из основных правил работы с ним!
+
+[[Точно...]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="14" name="Червяк не будет крутиться" tags="" position="990,999" size="100,100">&lt;div&gt;Точно! Вижу, занятия не проходят для тебя впустую.
+
+[[А то!]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="15" name="Точно..." tags="" position="890,1243" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="Будет непрерывно пищать в течение 54 секунд, работая при этом манипулятором" tags="" position="1012,1241" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="Будет раз в секунду чуть-чуть поворачивать средний мотор, издавая короткий писк - и так 60 секунд" tags="" position="1130,1237" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Gears_Correct" tags="" position="351,914" size="100,100">[img[media/E4.png]]&lt;div&gt;Абсолютно верно. Должен тебя поздравить - у тебя прекрасная память! Хмм... раз ты помнишь, что червяк это однозубая шестерня, то без труда ответишь на ещё один вопрос: каков характер червячно-зубчатой передачи??
+
+[[Характер дикий, неуравновешенный...-&gt;WormNotCorrect]]
+[[Она всегда понижающая-&gt;WormCorrect]]
+[[Она всегда повышающая-&gt;WormNotCorrect]]
+[[Зависит от того, какая шестерня ведущая-&gt;WormNotCorrect]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Gears_Wrong" tags="" position="522,921" size="100,100">&lt;&lt;set $counter += 1&gt;&gt;&lt;div&gt;Увы, неверно... Или я просто неправильно тебя понял. Попробуй ещё раз
+
+[[Попробую...-&gt;Choice]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Choice" tags="" position="425,774" size="100,100">&lt;&lt;if $counter === 3&gt;&gt;
+&lt;&lt;goto &quot;Ладно&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;goto &quot;Ага&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="21" name="WormNotCorrect" tags="" position="273,1038" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="WormCorrect" tags="" position="412,1039" size="100,100">&lt;div&gt;Верно. &lt;span class=&quot;red&quot;&gt;Вращение передаётся только с червяка на шестерню, но не наоборот&lt;/span&gt;, а поскольку у червяка всего 1 зубец, то его придётся прокрутить несколько раз, чтобы сделать 1 оборот любого, даже самого маленького зубчатого колеса. Поэтому мы конечно теряем в скорости, зато выигрываем в силе.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="А то!" tags="" position="1136,1083" size="100,100">&lt;div&gt;Механику немного вспомнили, теперь повторим программирование. Как будет вести себя робот, если запустить на нём данную программу?
+
+[[Будет непрерывно пищать в течение 54 секунд, работая при этом манипулятором]]
+[[Будет раз в секунду чуть-чуть поворачивать средний мотор, издавая короткий писк - и так 60 секунд]]&lt;/div&gt;[img[media/E2.png]]</tw-passagedata><tw-passagedata pid="24" name="Ладно" tags="" position="591,1038" size="100,100">[img[media/E4.png]]&lt;div&gt;Так и быть, не буду тебя больше мучить этими шестерёнками, но я всё же настоятельно рекомендую тебе быть внимательнее на занятии и запоминать названия деталей и размеры зубчатых колёс, это особенно пригодится на седьмом уровне!
+
+[[Хорошо-&gt;А то!]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Ага" tags="" position="411,661" size="100,100">[img[media/E3.png]]&lt;div&gt;Сколько зубцов на этих шестерёнках (идём слева направо)? Запиши ответ через запятую, например: &quot;1, 2, 3&quot;. 
+
+&lt;&lt;textbox &quot;$gears&quot; &quot;1, 2, 3&quot; &quot;Choice1&quot; autofocus&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Choice1" tags="" position="319,803" size="100,100">&lt;&lt;if $gears is &quot;24, 20, 1&quot; or $gears is &quot;24,20,1&quot;&gt;&gt;
+&lt;&lt;goto &quot;Gears_Correct&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;goto &quot;Gears_Wrong&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata></tw-storydata>
+
+<tw-storydata name="demo" startnode="1" creator="Twine" creator-version="2.2.1" ifid="792BDFAC-C8D7-49FE-91AD-EDF2D368692A" zoom="1" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Untitled Passage" tags="start" position="664,111" size="100,100">Привет! Рады видеть тебя на занятиях
+
+&lt;&lt;set $haveKey to false&gt;&gt;
+
+&lt;&lt;if $haveKey is true&gt;&gt;
+[[Открываем дверь]]
+[[Уйти]]
+&lt;&lt;else&gt;&gt;
+[[Дверь заперта, уйти]]
+&lt;&lt;/if&gt;&gt;
+
+[img[images/forest.jpg]]</tw-passagedata><tw-passagedata pid="2" name="Что мы сегодня будем делать?" tags="" position="970,505" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="3" name="Example" tags="" position="809,511" size="100,100">Тарам-парам
+
+[[Тарам]]</tw-passagedata><tw-passagedata pid="4" name="Тарам" tags="" position="555,406" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="Открываем дверь" tags="" position="445,261" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="6" name="Уйти" tags="" position="664,261" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="Дверь заперта, уйти" tags="" position="913,261" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+
+<tw-storydata name="Обучение преподавателей" startnode="1" creator="Twine" creator-version="2.2.1" ifid="20CC73F0-AB99-49ED-A72F-F3278F5CD58C" zoom="0.6" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+  	background-image: linear-gradient(bottom, blue, white);
+  	background: url("media/shattered-island.gif");
+  	background: url("media/design-tools.jpg");
+  	background: url("media/science.png");
+}
+
+.passage{
+  	background: black;
+    /*padding: 1%;*/
+ 	min-height: 400px;
+  	border: solid #000 0.05em; 
+  	border-radius: 0.2em; 
+  	box-shadow: #000 0.5em 0.5em 0;
+  	
+  	font-size: 125%;
+  	font-family: Helvetica, sans-serif;
+  	color: white;
+}
+
+.passage > div{
+  	padding: 5%;
+  	background: rgba(0,0,0,0.7);
+  	background: url("media/shattered-island.gif");
+}
+
+
+
+div:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+	width: 100%;
+  	height: auto;
+  	margin: 0 auto;
+}
+
+.pics-row{
+  	text-align: justify;
+}
+
+.pics-row > img{
+	display: inline-block;
+  	max-width: 48%;
+  	height: auto;	
+  	margin: 0;
+  	border: solid yellow 2px;
+}
+
+.pics-row > img:nth-child(1){
+  	float: left;
+  	margin-right: 0.5%;
+}
+
+.pics-row > img:nth-child(2){
+  	float: right;
+  	margin-left: 0.5%;
+}
+
+.red{
+	color: red;
+}
+
+.passage.menu img,
+.passage.slides2 img,
+.passage.after_append img,
+img .one-pic{
+	max-height: 400px;
+  	width: auto;
+}
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();*/
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="425,400" size="100,100">&lt;&lt;audio &quot;hackett&quot; loop play&gt;&gt;&lt;div&gt;Туториал по написанию интерактивной домашней теории для методистов Лиги Роботов (создан при помощи twine)
+
+[[Что такое twine и SugarCube?-&gt;Что такое twine]]
+[[Почему решили отказаться от видеотеории в пользу twine?]]
+
+[[Структура методики, написанной в твайне-&gt;Структура]]
+[[Установка и знакомство с интерфейсом twine-&gt;Установка]]
+[[Создаём простую методику]]
+
+[[Ветвление истории-&gt;Легко]]
+[[Добавляем логику]]
+[[Добавление медиа-контента]]
+[[Оформление и стили]]
+
+[[Глюки]]
+
+[[Организация работы]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Почему решили отказаться от видеотеории в пользу twine?" tags="why_not_video" position="725,300" size="100,100">&lt;div&gt;Несмотря на то, что видео получались хорошего качества, у этого формата домашней теории были существенные минусы.
+
+!!Минусы видеотеории:
+* &lt;mark&gt;Очень сложно (практически невозможно) редактировать в будущем&lt;/mark&gt;
+* Высокая стоимость создания одного ролика (причём львиная часть уходит стороннему подрядчику)
+* Отсутствие интерактивности (никакой проверки знаний ребёнка в ходе просмотра)
+* Малое количество просмотров
+
+Из-за этого возникла идея изменить формат. В конечном счёте выбор пал на [[twine|http://twinery.org]] (формат [[SugarCube|http://www.motoslave.net/sugarcube/2/docs/]]). Почему не взяли альтернативные варианты можно [[посмотреть здесь-&gt;Альтернативы twine]].
+
+!!Плюсы интерактивной теории, сделанной в twine:
+* Большая гибкость в стилизации и оформлении - в руках разработчика весь функционал html, css и js
+* Лёгкость пост-редактирования (при том что сам twine для освоения не сложен)
+* Стоимость написания интерактивной методики по предварительной оценке в 2 раза ниже чем у видео
+* Наличие интерактивности, а следовательно большее погружение в материал (за счёт ветвления повествования, вопросов по ходу история и т.д.)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Создаём простую методику" tags="" position="775,775" size="100,100">&lt;div&gt;Когда вы создадите новую историю, перед вами появится такой экран:
+
+[img[media/new_story.png]]
+
+Большую его часть занимает рабочее поле, на котором будет отображаться структура нашей истории. Окошко (1) посередине - это самый первый в истории, то есть стартовый &quot;слайд&quot;. Стартовый слайд можно будет позднее поменять. Добавление новых слайдов с помощью кнопки (2) использоваться будет крайне редко, скоро узнаете почему. 
+
+Нажав кнопку (3) можно будет запустить нашу игру, однако мы её будем использовать только для черновой отладки, об этом тоже чуть позже.
+
+[[А что за меню у нас под цифрой (5)?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Оформление и стили" tags="" position="2400,375" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="Альтернативы twine" tags="alt" position="1100,175" size="100,100">&lt;div&gt;Изначально планировалось делать интерактивную теорию на движке [[renpy|https://www.renpy.org]], широко используемом для написания &lt;mark&gt;графических новелл&lt;/mark&gt;.
+
+&lt;div class=&quot;pics-row clearfix&quot;&gt; [img[media/renpy1.png]] [img[media/renpy2.png]] &lt;/div&gt;
+
+Графические новеллы по своей сути - это презентации с элементами интерактивности. Может быть на полноценную игру и не тянет, но всё же это значительно увлекательнее, чем старые-добрые пдф-ки. А что касается преимуществ по сравнению с видеотеорией, то формат графической новеллы написанной на &quot;ренпае&quot; &lt;mark&gt;(1) поддаётся пост-редактированию и (2) дешевле в производстве&lt;/mark&gt;.
+
+[[Звучит неплохо. А почему тогда не стали делать на нём?]]
+[[Хорошо, что не стали делать на ренпае, не нравится мне он]]
+[[А ещё альтернативы рассматривали?]]&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="6" name="Глюки" tags="" position="2525,450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="Звучит неплохо. А почему тогда не стали делать на нём?" tags="" position="1850,175" size="100,100">&lt;div&gt;У ренпая тоже обнаружился существенный недостаток. Дело в том, что методика написанная на нём представляла собой (для Windows) папку с исполняемым файлом; то есть чтобы включить методику детям (или их родителям) пришлось бы скачивать эту папку себе и только потом запускать игру. Учитывая, что даже видео людям включать лень, было сформулировано требование, что &lt;mark&gt;игра должна открываться в браузере по нажатию на ссылку&lt;/mark&gt;.
+
+[[А твайн, получается, это умеет?-&gt;Структура]]
+[[Неужели никак нельзя прикрутить к сайту игрушку на ренпае?]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Неужели никак нельзя прикрутить к сайту игрушку на ренпае?" tags="" position="1975,350" size="100,100">&lt;div&gt;На официальном сайте [[описан способ|https://www.renpy.org/doc/html/chromeos.html]], как сделать билд игры в виде расширения для Chrome. Однако, это по сути ничем не отличается от билда в виде .exe для Windows, .apk для Android и так далее.
+
+Способ подвесить игру на ренпае непосредственно на сайт скорее всего существует, но найти его не удалось :&#39;(
+
+[[Понятно. Значит из-за этого перешли на твайн-&gt;Структура]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Хорошо, что не стали делать на ренпае, не нравится мне он" tags="" position="1825,400" size="100,100">&lt;div&gt;Ренпаю нужно отдать должное - это весьма удобный и при этом простой в использовании движок.
+
+Но нельзя не отметить, что за ним почему-то закрепилась некая &quot;анимешная&quot;, или даже (о боже!) &quot;анимешно-эротическая&quot; слава (взять то же &quot;Бесконечное лето&quot;, которое написано на нём), которая нам конечно ни к чему.
+
+А ещё игрушку на ренпае оказалось сложно подвесить непосредственно к личным кабинетам родителей, чтобы они могли её легко открыть.
+
+[[Ага, значит из-за всего этого нашли альтернативу в виде twine-&gt;Структура]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Структура" tags="" position="900,350" size="100,100">&lt;div&gt;Методика, написанная в твайне представляет из себя папку с названием вроде &lt;mark&gt;&quot;LR_6-05&quot;&lt;/mark&gt; (пятое занятие шестого уровня), в которой находится еще одна папка &lt;mark&gt;&quot;media&quot;&lt;/mark&gt; (для картинок, гифок, звуков и музыки), а также файл &lt;mark&gt;&quot;LR_6-05.html&quot;&lt;/mark&gt;.
+
+[img[media/folder.png]]
+
+Да-да, твайн сохраняет методику в формате html! А это значит, что загрузка методики на сервер сводится к перекидыванию туда нашей папки и подключению ссылки на неё.
+
+[[А что вообще такое этот &quot;твайн&quot;?-&gt;Что такое twine]]
+[[Хорошо, а как поставить себе twine?-&gt;Установка]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Установка" tags="" position="800,575" size="100,100">&lt;div&gt;Чтобы начать работать с twine, нужно [[скачать дистрибутив|http://twinery.org]] с официального сайта под свою систему и установить его. 
+
+Будьте внимательны! Нам нужен twine второй версии (на 8 октября 2018 года версия 2.2.1), первая не подойдёт.
+
+[img[media/download.png]]
+
+Также можно пользоваться [[онлайн-версией|http://twinery.org/2]] редактора, работающей прямо из браузера.
+
+[[Думаю разберусь...]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Что такое twine" tags="" position="700,100" size="100,100">&lt;div&gt;Твайн - это среда для создания нелинейных интерактивных историй (то есть так называемых &quot;текстовых квестов&quot;). Ознакомиться с примерами можно, скажем, [[по этой ссылке|http://ifdb.tads.org/random?t=high-rated]].
+
+&lt;div class=&quot;pics-row&quot;&gt;[img[media/twine-win.png]][img[media/twine-win1.png]]&lt;/div&gt;
+Он очень гибок, так как технически представляет из себя что-то вроде надстройки над стандартными инструментами web-разработки: html, css и javascript. История, написанная в твайне - это по сути очень разветвлённый сайт с кучей ссылок.
+
+[[А что такое SugarCube?]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="13" name="А что такое SugarCube?" tags="" position="925,50" size="100,100">&lt;div&gt;В твайне есть три предустановленных формата: Harlowe, Snowman и SugarCube. Эти форматы добавляют в наш арсенал свои способы разметки текста для историй, а также прочий полезный функционал.
+
+[img[media/formats.png]]
+
+Мы будем использовать SugarCube по двум причинам: 
+* он более гибок, так как в нём предсказуемо работают все теги html и свойства css
+* в нём есть простой способ подключения фоновых мелодий, которые будут, не прерываясь, играть на заднем плане во время игры.
+
+[[А почему всё-таки не стали делать видеотеорию?-&gt;Почему решили отказаться от видеотеории в пользу twine?]]
+[[Понятно. И как всю эту красоту устанавливать?-&gt;Установка]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="А ещё альтернативы рассматривали?" tags="" position="1725,50" size="100,100">&lt;div&gt;Прозвучала идея делать не &quot;интерактивные презентации&quot;, а полноценные игры рекламно-мотивационного характера. Для чего-то посерьёзнее можно было бы использовать Unity, Unreal Engine, Cocos, для чего-то попроще - javascript или различные библиотеки для python-а. 
+
+Вполне возможно, что такие игры со временем в Лиге Роботов появятся. Например уже сейчас есть [[приложение в Google Play|https://play.google.com/store/apps/details?id=com.app.LigaRobotov]], написанное на Unity Лигой, которое добавляет в методички дополненную реальность.
+
+Тем не менее для текущей задачи (создать более читабельную замену для пдф-ок с домашней теорией, раз уж видеоформат не подошёл) текстовые квесты выглядят неплохим решением.
+
+[[Хм, возможно. А всё-таки почему не стали делать на ренпае?-&gt;Звучит неплохо. А почему тогда не стали делать на нём?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Думаю разберусь..." tags="" position="975,550" size="100,100">&lt;div&gt;Интерфейс твайна достаточно интуитивен. На стартовом экране мы прежде всего видим (1) находящиеся в разработке проекты (&quot;истории&quot;) и (2) кнопку для создания новых.
+
+[img[media/main_screen.png]]
+
+Под цифрой (3) у нас скрываются опции для сохранения всех рабочих файлов в единый архив, который потом можно передавать другим разработчикам и импортировать в твайн на другом компьютере. 
+
+&lt;span class=&quot;red&quot;&gt;Архивируйте вашу работу почаще! Дело в том, что рабочие файлы твайна хранятся в браузере (даже если вы не используете онлайн-версию), поэтому сбой в его работе или очистка истории в нём приведут к потере сделанной работы.&lt;/span&gt;
+
+Под импортом и архивацией также находится кнопка выбора формата (&quot;Formats&quot;). На неё нужно будет нажать один-единственный раз и выбрать в появившемся списке SugarCube.
+
+[img[media/formats.png]]
+
+[[Что еще за форматы такие?-&gt;А что такое SugarCube?]]
+
+Наконец, в правом нижнем углу стоит небольшой тумблер (4) для переключения темы оформления нашей программы (ночная или дневная).
+
+[[Создам-ка я новую историю-&gt;Создаём простую методику]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Организация работы" tags="" position="1925,1175" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="А что за меню у нас под цифрой (5)?" tags="menu" position="925,800" size="100,100">&lt;div&gt;В данном меню нас будут интересовать только два пункта. 
+
+Если нажать кнопку (1), то откроются &quot;стили&quot; - документ, в который можно будет записывать параметры оформления нашей игры (для тех кто в теме - это подключаемый css-файл).
+
+Если же нажать (2), то программа соберёт готовый html-файл, который можно будет открыть в любом современном браузере (Chrome, Firefox, Opera, Edge...) как с компьютера, так и с мобильного устройства. 
+
+&lt;div class=&quot;pics-row&quot;&gt;[img[media/menu.png]][img[media/folder1.png]]&lt;/div&gt;
+
+Сохранять файл html нужно в предварительно созданную одноимённую папку, в которой уже лежит каталог &quot;media&quot; для картинок и звуков. Сюда же рекомендуется сохранять ваш рабочий архив (кнопка &quot;Archive&quot; на стартовом экране). Хранить всё это великолепие  лучше всего в облаке, например на Google Drive.
+
+[[Вроде понятно. Пора начинать писать саму историю]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Вроде понятно. Пора начинать писать саму историю" tags="" position="1075,750" size="100,100">&lt;div&gt;В качестве упражнения я предлагаю написать небольшой квест, описываемый следующей схемой:
+
+[img[media/quest.png]]
+
+В этой истории у нас будет всего 7 слайдов: на самом первом герой стоит перед жёлтой дверью, затем он оказывается в коридоре и выбирает следующую дверь, ещё три слайда посвящены каждой из них, плюс по одному слайду на котика и собаку.
+
+Чтобы начать редактировать стартовый слайд, щёлкните по нему 2 раза мышкой.
+
+[[Сделано!]]
+[[Что ещё за стартовый слайд?-&gt;Создаём простую методику]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Сделано!" tags="" position="1225,775" size="100,100">&lt;div&gt;Давайте разберём структуру отдельного слайда (по английски - passage).
+
+[img[media/slide.png]]
+
+Во-первых, у каждого passage есть название, которое по совместительству является идентификатором, по которому мы можем переходить на данный слайд. Стартовый слайд можно было никак не называть, потому что на него никто не ссылается (по крайней мере пока).
+
+Во-вторых, некоторым слайдам мы будем присваивать теги. Обязательным это будет для тех случаев, когда вы хотите вставить фон, потому что фоны мы будем подключать именно по тегам в &quot;стилях&quot; (css), но про это значительно позже.
+
+Сам текст, который будет отображаться игроку, пишется интуитивно - как в обычном ворде или блокноте; единственный момент - для возможности настройки оформления мы в каждом слайде будем &quot;обёртывать&quot; текст в html-тег {{{&lt;div&gt;}}}. 
+
+Наконец, в конце мы прописываем варианты ответа игрока, которые будут перемещать нас к другим слайдам. Как только вы закроете окошко редактирования, под каждую ссылку будет автоматически создан новый passge (вот почему мы практически не будем создавать новые слайды с помощью зелёной кнопки)
+
+[[Вроде понятно]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Вроде понятно" tags="slides2" position="1350,850" size="100,100">&lt;div&gt;Теперь у нас появился второй слайд, давай заполним и его. Щёлкаем по нему дважды мышкой.
+
+[img[media/2slides.png]]
+
+[[Легко]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Легко" tags="" position="625,1000" size="100,100">&lt;div&gt;На этом слайде мы добавим в историю ветвление - создадим не один, а целых три варианта ответа (синий прямоугольник):
+
+[img[media/door-choice.png]]
+
+Также не забывайте обёртывать текст слайда в {{{&lt;div&gt;}}}
+
+[[Это уже интересно]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Это уже интересно" tags="" position="750,1050" size="100,100">&lt;div&gt;Соответственно, под каждую ссылку твайн создаст по новому слайду:
+
+[img[media/door-choice-scheme.png]]
+
+[[Это мы уже знаем]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Это мы уже знаем" tags="" position="875,1075" size="100,100">&lt;div&gt;В принципе, полученных на данном этапе знаний уже достаточно, чтобы выполнить наше упражнение с дверьми. Пожалуйста, потренируйся, создай все 7 (или даже больше) слайдов, а затем я расскажу что делать дальше. Еще раз показываю схему нашей истории:
+
+[img[media/quest.png]]
+
+PS: если зайдёшь в тупик, переходи на следующий слайд - там подсказка
+
+[[За работу!]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="За работу!" tags="" position="1000,1000" size="100,100">&lt;div&gt;Скорее всего, у тебя возникнет проблема вот на этом этапе:
+
+[img[media/story.png]]
+
+Нужно, чтобы и красная и зелёная двери вели в одно и то же место. Самый рациональный вот какой: (1) создать (при помощи кнопки) слайд с названием &quot;Котик&quot;, (2) в ссылках на него добавить {{{-&gt;Котик}}}:
+
+[img[media/append.png]]
+
+[[Сейчас попробую...]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Сейчас попробую..." tags="after_append" position="1225,1100" size="100,100">&lt;div&gt;После внесённых изменений мы получим желаемую структуру:
+
+[img[media/after-append.png]]
+
+[[Добавляем логику]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Добавляем логику" tags="" position="475,1200" size="100,100">&lt;div&gt;Итак, у нас есть маленькая история про загадочного человека и разноцветные двери. Ещё раз напомню её структуру:
+
+&lt;div class=&quot;pics-row&quot;&gt;[img[media/quest.png]][img[media/after-append.png]]&lt;/div&gt;
+
+Пришло время сделать наш квест более интересным!
+
+[[Я вас внимательно слушаю...-&gt;Как создавать и задавать значение переменной]]&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="27" name="Как создавать и задавать значение переменной" tags="" position="950,1250" size="100,100">&lt;div&gt;Пусть теперь &lt;mark&gt;на дверях стоят замки&lt;/mark&gt;, и наш герой может войти только в те двери, от которых у него есть ключи. Допустим, в самом начале у него в кармане пальто &lt;u&gt;только зелёный ключ&lt;/u&gt;. 
+
+Как записать это при помощи кода? Элементарно, в стартовом слайде создадим логическую переменную {{{$haveGreenKey}}} и установим ей значение &quot;истина&quot;:
+
+&lt;img class=&quot;one-pic&quot; src=&quot;media/variable.png&quot;&gt;
+
+Обрати внимание, что переменные в твайн (1) всегда начинаются со знака доллара и (2) их не нужно заранее объявлять а также указывать их тип - это происходит автоматически.
+
+[[Мм, переменные...-&gt;Условный оператор]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Условный оператор" tags="" position="875,1375" size="100,100">&lt;div&gt;Теперь, в слайд, где герой стоит перед зелёной дверью, добавим такой код:
+
+&lt;img class=&quot;one-pic&quot; src=&quot;media/green-door.png&quot;&gt;
+
+Условный оператор является макросом твайна и поэтому заключается в двойные угловые скобки. Обрати внимание, что в его конце стоит &quot;закрывашка&quot; {{{&lt;/if&gt;}}}. 
+
+Теперь, когда герой дойдёт до зелёной двери, его возможности будут зависеть от того есть у него ключ или нет. Если есть, то игрок увидит примерно следующее:
+
+&lt;img class=&quot;one-pic&quot; src=&quot;media/have-green-key.png&quot;&gt;
+
+Если нет, то такое:
+
+&lt;img class=&quot;one-pic&quot; src=&quot;media/have-not-green-key.png&quot;&gt;
+
+[[Круто! А за зелёной дверью у нас...-&gt;Добавление медиа-контента]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Добавление медиа-контента" tags="" position="325,1425" size="100,100">&lt;div&gt;За зелёной дверью у нас сидит котик. Считаю, что игрок имеет право на него посмотреть! Поэтому сейчас мы будем учиться добавлять в твайн изображения. Проще всего это делается с помощью конструкции {{{[img[Image]]}}}:
+
+&lt;img class=&quot;one-pic&quot; src=&quot;media/cat-code.png&quot;&gt;
+
+[[А как вставить видео?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="А как вставить видео?" tags="" position="525,1500" size="100,100">&lt;div&gt;Как уже говорилось, папки с домашней теорией будут храниться на сервере Лиги Роботов, однако сервер, понятное дело, не резиновый, и мы вынуждены ввести &lt;mark&gt;ограничение на объем методики: 100 Мб&lt;/mark&gt;. 
+
+Это ограничение означает, что в папке &quot;media&quot; мы можем хранить картинки, гифки, фоновые треки, но не видео. Видео будет храниться скорее всего на ютубе и вставляться в методику посредством ссылок. 
+
+[[Окей, а как именно?]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Окей, а как именно?" tags="" position="700,1525" size="100,100">&lt;div&gt;Чтобы вставить видео с ютуба в твайн, нужно (1) открыть в ютубе нужное видео, (2) под видео нажать кнопку &quot;Поделиться&quot;, (3) далее кнопку &quot;встроить&quot; и, наконец, (4) &quot;копировать&quot;:
+
+[img[media/embed-video.png]]
+
+Скопированный в буфер обмена код далее вставляем в нужный слайд:
+
+[img[media/iframe.png]]
+
+[[Понятно, а как сделать фоновую мелодию?]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Понятно, а как сделать фоновую мелодию?" tags="" position="875,1550" size="100,100">&lt;div&gt;Чтобы вставить фоновую мелодию, нужно:
+# создать отдельный несюжетный passage с названием &quot;StoryInit&quot;,[img[media/music.png]]
+# внутри него написать единственную строчку: &lt;mark&gt;{{{&lt;&lt;cacheaudio &quot;track&quot; &quot;media/audio/some-music.mp3&quot;&gt;&gt;}}}&lt;/mark&gt;, где track - это кодовое слово, которое вы выбрали для нужного вам трека; 
+# осталось только добавить в стартовый passage строчку &lt;mark&gt;{{{&lt;&lt;audio &quot;track&quot; loop play&gt;&gt;}}}&lt;/mark&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="StoryInit" tags="" position="280,370" size="100,100">&lt;&lt;cacheaudio &quot;hackett&quot; &quot;media/audio/tomorrow.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;more&quot; &quot;media/audio/moresolntse3.mp3&quot;&gt;&gt;</tw-passagedata></tw-storydata>
+

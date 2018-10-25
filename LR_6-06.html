@@ -300,7 +300,7 @@ $(document.head).find('#style-ui-bar').remove();
 *&lt;&lt;img &quot;media6-06/E3.png&quot;&gt;&gt;
 @@
 &lt;&lt;textbox &quot;$gears&quot; &quot;1, 2, 3&quot; &quot;Choice1&quot; autofocus&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Choice1" tags="" position="317,803" size="100,100">&lt;&lt;if $gears is &quot;24, 20, 1&quot; or $gears is &quot;24,20,1&quot; or $gears is &quot;24,20, 1&quot; or $gears is &quot;24, 20,1&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Choice1" tags="" position="317,801.3333333333334" size="100,100">&lt;&lt;if $gears is &quot;16, 20, 1&quot; or $gears is &quot;16,20,1&quot; or $gears is &quot;16,20, 1&quot; or $gears is &quot;16, 20,1&quot;&gt;&gt;
 	&lt;&lt;set $score += 1&gt;&gt;
 	&lt;&lt;goto &quot;Gears_Correct&quot;&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -367,12 +367,12 @@ $(document.head).find('#style-ui-bar').remove();
 [[Да, ещё подумаю-&gt;Сложная задача]]
 [[Нет, давайте дальше]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Нет, давайте дальше" tags="" position="1605,1879" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Меню" tags="bg-sheff" position="1240,1871" size="100,100">&lt;div&gt;В нашем сегодняшнем меню:
-&lt;&lt;actions [[Новые детали]] [[Новый блок действия]] [[Новый логический блок]]&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Новые детали" tags="" position="950,2149.6666666666665" size="100,100">&lt;&lt;set $det to true&gt;&gt;&lt;div&gt;Из новых деталей у нас 2 угловые балки и бежевый полукрестовой штифт. Он гладкий, а это значит, что если посадить на него балку, то она будет без труда на нём проворачиваться.
+&lt;&lt;actions [[Новые детали]] [[Новый блок действия]] [[Новый логический блок]]&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Новые детали" tags="" position="950,2148" size="100,100">&lt;&lt;set $det to true&gt;&gt;&lt;div&gt;Из новых деталей у нас 2 угловые балки и бежевый полукрестовой штифт. Он гладкий, а это значит, что если посадить на него балку, то она будет без труда на нём проворачиваться.
 
 @@.pics-row;
 *&lt;&lt;img &quot;media6-06/E7.png&quot;&gt;&gt;
 @@
-[[Всё понятно, едем дальше-&gt;Меню]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Новый блок действия" tags="" position="1305,2046" size="100,100">&lt;div&gt;Как ты уже знаешь, в зелёной вкладке находятся не только блоки управления моторами, но и другие действия, а именно
+[[Всё понятно, едем дальше-&gt;ch]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Новый блок действия" tags="" position="1305,2046" size="100,100">&lt;div&gt;Как ты уже знаешь, в зелёной вкладке находятся не только блоки управления моторами, но и другие действия, а именно
 # управление экраном блока,
 # управление динамиком блока,
 # &lt;mark&gt;управление лампой подсветки блока.&lt;/mark&gt;
@@ -411,7 +411,7 @@ $(document.head).find('#style-ui-bar').remove();
 @@.pics-row;
 *&lt;&lt;img &quot;media6-06/E8.png&quot;&gt;&gt;
 @@
-[[Всё понятно, на занятии попробую-&gt;Меню]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Ой, а можно сразу к новой теории?" tags="" position="1612,727" size="100,100">&lt;div&gt;Давай так - я даю тебе одну задачу посложнее на повторение, и если ты справляешься, то сразу переходим к новым темам, а если нет - ты потратишь ещё немного времени на то, чтобы разобраться с прошлым материалом. Договорились?
+[[Всё понятно, на занятии попробую-&gt;ch]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Ой, а можно сразу к новой теории?" tags="" position="1612,727" size="100,100">&lt;div&gt;Давай так - я даю тебе одну задачу посложнее на повторение, и если ты справляешься, то сразу переходим к новым темам, а если нет - ты потратишь ещё немного времени на то, чтобы разобраться с прошлым материалом. Договорились?
 
 [[Договорились-&gt;Сложная задача]]
 [[Я передумал, давайте уж всё повторять-&gt;Пора прятаться...]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="А зачем он нужен?" tags="" position="1608,2206" size="100,100">&lt;div&gt;Переключатель служит для того, чтобы сделать развилку в нашем коде: дойдя до него программа обработает &lt;u&gt;входное условие&lt;/u&gt; и далее выберет ту или иную дорогу, которой ей дальше идти &lt;em&gt;(прямо как герой картины &quot;Витязь на распутье&quot; Васнецова):&lt;/em&gt;
